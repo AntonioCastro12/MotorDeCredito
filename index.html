@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor de Decisión de Crédito</title>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Motor de Decisión de Crédito</h1>
+        <form id="credit-form">
+            <div class="form-group">
+                <label for="tipoNomina">Tipo de Nómina:</label>
+                <select id="tipoNomina" required>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fechaPrimerEmpleo">Fecha del Primer Empleo:</label>
+                <input type="date" id="fechaPrimerEmpleo" required>
+            </div>
+            <div class="form-group">
+                <label for="genero">Género:</label>
+                <select id="genero" required>
+                    <option value="m">Masculino</option>
+                    <option value="f">Femenino</option>
+                </select>
+            </div>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultados" class="resultados"></div>
+    </div>
+    <script src="motor.js"></script>
+</body>
+</html>
